@@ -21,7 +21,7 @@
     "build": "ng build",
     "clean": "rm -rf node_modules package-lock.json dist",
     "deploy": "npm run build:prod && firebase deploy",
-    "e2e:run": "cypress run",
+    "cypress:run": "cypress run",
     "e2e": "cypress open",
     "lint:fix": "ng lint --fix && stylelint \"src/**/*.scss\" --fix && npm run prettier",
     "lint:styles": "stylelint \"src/**/*.scss\"",
