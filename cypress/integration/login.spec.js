@@ -13,6 +13,8 @@ describe('Login Page', () => {
   })
 
   it('has selection field with Kent emails', () => {
+    cy.get('button[type=submit]').should('be.disabled')
+
     cy.get('mat-select').click()
     cy.get('mat-option')
       .contains('@kent.edu.au')
