@@ -6,7 +6,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 import { ScrollingModule } from '@angular/cdk/scrolling'
 import { MatDialogModule } from '@angular/material/dialog'
-import { MatTabsModule } from '@angular/material/tabs'
+// import { MatTabsModule } from '@angular/material/tabs'
+import { MatCardModule } from '@angular/material/card'
 
 import { RouterModule, Routes } from '@angular/router'
 
@@ -37,7 +38,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     ScrollingModule,
-    MatTabsModule,
+    MatCardModule,
+    // MatTabsModule,
     MatDialogModule,
     FormsModule,
     ReactiveFormsModule,

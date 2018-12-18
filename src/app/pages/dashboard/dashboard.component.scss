@@ -7,3 +7,16 @@
     text-align: center;
   }
 }
+
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+mat-card {
+  margin: 2%;
+  width: 46%;
+  mat-card-content {
+    text-align: center;
+  }
+}

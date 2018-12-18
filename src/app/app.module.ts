@@ -31,13 +31,22 @@ import { Ng2ImgToolsModule } from 'ng2-img-tools'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 import { AboutComponent } from './pages/leaderboard/dialogs/about/about.component'
+import { MyDashboardComponent } from './my-dashboard/my-dashboard.component'
+import {
+  MatGridListModule,
+  MatCardModule,
+  MatMenuModule,
+  MatIconModule
+} from '@angular/material'
+import { LayoutModule } from '@angular/cdk/layout'
 
 @NgModule({
   declarations: [
     AppComponent,
     LeaderboardComponent,
     LoginComponent,
-    AboutComponent
+    AboutComponent,
+    MyDashboardComponent
   ],
   imports: [
     AngularFireAuthModule,
@@ -58,7 +67,12 @@ import { AboutComponent } from './pages/leaderboard/dialogs/about/about.componen
     FlexLayoutModule,
     SharedModule,
     MatSelectModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    LayoutModule
   ],
   providers: [
     AuthService,
